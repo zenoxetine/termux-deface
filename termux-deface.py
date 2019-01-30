@@ -64,6 +64,10 @@ def single_webdav(url):
     os.system("clear && toilet -f mono12 -F metal Webdav")
     print (55*"\033[36m_")
     sc = raw_input("\033[39m[\033[31m+\033[39m] Script Deface: \033[34m")
+    if sc.startswith("/s"):
+            os.system("cp " + sc + " $HOME/termux-deface")
+            print("\033[39m[\033[31m+\033[39m] \033[33mSekarang Cukup Masukan Nama Filenya!")
+            sc = raw_input("\033[39m[\033[31m+\033[39m] Nama File: ")
     with open(sc, 'rb') as f:
         script = f.read()
     if not url.endswith("/"):
@@ -89,6 +93,10 @@ def list_webdav():
     print (55*"\033[36m_")
     while True:
         loss = raw_input("\033[39m[\033[31m+\033[39m] List File    : \033[34m")
+        if loss.startswith("/s"):
+            os.system("cp " + loss + " $HOME/termux-deface")
+            print("\033[39m[\033[31m+\033[39m] \033[33mSekarang Cukup Masukan Nama Filenya!")
+            loss = raw_input("\033[39m[\033[31m+\033[39m] Nama File: ")
         try:
             lists = open((loss), "r")
             lena = open((loss), "r")
@@ -98,6 +106,10 @@ def list_webdav():
             continue
     while True:
         sc = raw_input("\033[39m[\033[31m+\033[39m] Script Deface: \033[34m")
+        if sc.startswith("/s"):
+            os.system("cp " + sc + " $HOME/termux-deface")
+            print("\033[39m[\033[31m+\033[39m] \033[33mSekarang Cukup Masukan Nama Filenya!")
+            sc = raw_input("\033[39m[\033[31m+\033[39m] Nama File: ")
         try:
             script = open((sc), "rb").read()
             break
