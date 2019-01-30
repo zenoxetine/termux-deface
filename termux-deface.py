@@ -61,7 +61,6 @@ def com_fabrik():
         os.system("python2 termux-deface.py")
 
 def single_webdav(url):
-    os.system("clear && toilet -f mono12 -F metal Webdav")
     print (55*"\033[36m_")
     sc = raw_input("\033[39m[\033[31m+\033[39m] Script Deface: \033[34m")
     if sc.startswith("/s"):
