@@ -1,8 +1,10 @@
 # encoding=utf8
+import os, sys, time
 try:
-    import os, requests, sys, time
+    import requests
 except ImportError:
     os.system("python2 -m pip2 install requests mechanzie")
+    import requests
 reload(sys)
 sys.setdefaultencoding("utf8")
 def com_fabrik():
