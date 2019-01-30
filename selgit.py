@@ -1,8 +1,10 @@
 # encoding=utf8
+import sys, os
 try:
-    import requests, sys, mechanize, os
+    import requests, mechanize
 except:
     os.system("pip install requests mechanize")
+    import requests, mechanize
 reload(sys)
 sys.setdefaultencoding('utf8')
 class deface:
