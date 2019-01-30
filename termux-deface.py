@@ -1,7 +1,7 @@
 # encoding=utf8
 try:
     import os, requests, sys, time
-except:
+except ImportError:
     os.system("python2 -m pip2 install requests mechanzie")
 reload(sys)
 sys.setdefaultencoding("utf8")
