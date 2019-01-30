@@ -1,5 +1,8 @@
 # encoding=utf8
-import os, requests, sys, time
+try:
+    import os, requests, sys, time
+except:
+    os.system("python2 -m pip2 install requests mechanzie")
 reload(sys)
 sys.setdefaultencoding("utf8")
 def com_fabrik():
@@ -172,6 +175,7 @@ def awal():
     print ("\033[33m[\033[34m1\033[33m] \033[39mDeface Com_fabrik")
     print ("\033[33m[\033[34m2\033[33m] \033[39mDeface Webdav")
     print ("\033[33m[\033[34m3\033[33m] \033[39mDeface Take Over Github")
+    print ("\033[33m[\033[34m4\033[33m] \033[39mExit/Keluar")
     p = input("\033[39m[\033[31m+\033[39m] Pilih-> \033[35m")
     if p ==1:
         com_fabrik()
@@ -181,6 +185,8 @@ def awal():
         webdav()
     elif p ==3:
         selgit()
+    elif p ==4:
+        sys.exit()
     else:
         print ("\033[39m[\033[31m+\033[39m] Pilih Yang Bener -_*")
         time.sleep(4)
