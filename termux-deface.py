@@ -3,7 +3,7 @@ import os, sys, time
 try:
     import requests
 except ImportError:
-    os.system("python2 -m pip2 install requests mechanzie")
+    os.system("pip install requests mechanzie")
     import requests
 reload(sys)
 sys.setdefaultencoding("utf8")
