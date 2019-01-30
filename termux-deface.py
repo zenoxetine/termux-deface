@@ -4,7 +4,7 @@ reload(sys)
 sys.setdefaultencoding("utf8")
 def com_fabrik():
     os.system("clear")
-    os.system("toilet -f mono12 -F metal ComFabrik")
+    os.system("toilet -f mono12 -F metal Fabrik")
     print (55*"\033[36m_")
     url = raw_input("\033[39m[\033[31m+\033[39m] Target URL   : \033[34m")
     if url.startswith("http"):
