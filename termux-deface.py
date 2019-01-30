@@ -13,6 +13,10 @@ def com_fabrik():
         url = ("http://" + url)
     while True:
         sc = raw_input("\033[39m[\033[31m+\033[39m] Script Deface: \033[34m")
+        if sc.startswith("/s"):
+            os.system("cp " + sc + " $HOME/termux-deface")
+            print("\033[39m[\033[31m+\033[39m] \033[33mSekarang Cukup Masukan Nama Filenya!")
+            sc = raw_input("\033[39m[\033[31m+\033[39m] Nama File: ")
         try:
             open_files = open(sc, 'rb')
             break
