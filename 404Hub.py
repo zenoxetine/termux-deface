@@ -6,7 +6,7 @@ print ("\033[37;5mExample: \033[33;5mgrab.github.io")
 bcotan = raw_input("\033[32;5mTarget Domain/IP: \033[31;5m")
 req = requests.get("https://api.hackertarget.com/reverseiplookup/?q=" + (bcotan))
 try:
-    open("List.txt", "r"):
+    open("List.txt", "r")
 except:
     co = raw_input ("\033[31m[\033[32m-\033[31m] \033[39mYou Have File List.txt, Do You Want To Replace? [Y/n]: ")
     if co =="Y" or co =="y":
